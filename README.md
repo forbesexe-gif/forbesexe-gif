@@ -4,13 +4,12 @@ Finance student, banking professional, and product builder developing AI-assiste
 
 ## Driven Agentics
 
-[Driven Agentics](https://drivenagentics.com) is being planned as the parent company for a portfolio of specialized AI products. Its purpose is to turn complex analytical workflows into controlled, explainable, and deployable software. Legal formation details remain pending until formally completed.
+[Driven Agentics](https://drivenagentics.com) is being planned as the parent company for PinkCharts and KoalaWire. Its purpose is to turn complex analytical workflows into controlled, explainable, and deployable software. Legal formation details remain pending until formally completed.
 
 | Project | Focus | Status |
 |---|---|---|
 | [PinkCharts](https://pinkcharts.com) | Market analytics and trading-model evaluation | Active development and private beta |
 | [KoalaWire](https://koalawire.com) | Authorized defensive security assessment | Architecture and repository foundation |
-| Social Autopilots | Policy-controlled Facebook, Instagram, and LinkedIn operations | Architecture and documentation scaffold |
 
 ## Portfolio
 
@@ -43,9 +42,11 @@ KoalaWire is an early-stage defensive security platform intended for authorized 
 
 KoalaWire is intended only for systems I own or have explicit permission to test. Its repositories currently contain scope and architecture documentation rather than a completed product.
 
+## Independent Project
+
 ### Social Autopilots
 
-Social Autopilots is an early architecture and documentation project for a shared social-operations dashboard with specialized Facebook, Instagram, and LinkedIn operators. The design excludes automated likes, follows, votes, and connection requests. External publishing and messaging remain disabled until official APIs, deterministic authorization, auditability, and administrative controls are implemented and verified.
+Social Autopilots is an early architecture and documentation project for a shared social-operations dashboard with specialized Facebook, Instagram, and LinkedIn operators. The design excludes automated likes, follows, votes, and connection requests. External publishing and messaging remain disabled until official APIs, deterministic authorization, auditability, and administrative controls are implemented and verified. Its future ownership under Driven Agentics has not been formally decided.
 
 ## My Role
 
