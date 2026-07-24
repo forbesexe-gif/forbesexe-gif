@@ -1,14 +1,21 @@
 # Jonathan Forbes
 
-Finance student and banking professional building AI-assisted fintech, cloud, and automation systems.
+Finance student, banking professional, and product builder developing AI-assisted fintech, cybersecurity, cloud, and automation systems.
 
-## Current Work
+## Driven Agentics
+
+[Driven Agentics](https://drivenagentics.com) is being developed as the parent organization for a portfolio of specialized AI products. Its purpose is to turn complex analytical workflows into controlled, explainable, and deployable software.
+
+| Project | Focus | Status |
+|---|---|---|
+| [PinkCharts](https://pinkcharts.com) | Market analytics and trading-model evaluation | Active development and private beta |
+| [KoalaWire](https://koalawire.com) | Authorized defensive security assessment | Architecture and repository foundation |
+
+## Portfolio
 
 ### PinkCharts
 
-PinkCharts is a private-beta market analytics and trading-model evaluation platform designed to analyze backtests, paper-trading sessions, risk-adjusted performance, drawdowns, consistency, and trading behavior.
-
-I define the product requirements, system behavior, risk controls, acceptance criteria, and deployment approach. OpenAI Codex, v0, Claude, and other development tools assist with implementation, debugging, refactoring, and documentation. I review and validate changes before deployment.
+PinkCharts is a market analytics and trading-model evaluation platform designed to analyze backtests, paper-trading sessions, risk-adjusted performance, drawdowns, consistency, and trading behavior.
 
 **Current architecture:**
 
@@ -17,24 +24,37 @@ I define the product requirements, system behavior, risk controls, acceptance cr
 - SQLAlchemy persistence with PostgreSQL and SQLite
 - DigitalOcean cloud infrastructure
 - Vercel frontend deployment
-- Git and GitHub version control
 - Paper-trading, model-scorecard, audit, and risk-control workflows
+- Git and GitHub version control
 
-## Selected Projects
+### KoalaWire
 
-- **PinkCharts.com** — public product and early-access website for the PinkCharts platform
-- **PinkCharts Backend** — private FastAPI services, persistence, market-data workflows, risk controls, and paper-trading infrastructure
-- **PinkCharts Frontend** — private Next.js dashboard with controlled server-side API proxying
-- **Instagram AI Operator** — early-stage architecture for a disclosed, policy-controlled AI social-media operator using official APIs
+KoalaWire is an early-stage defensive security platform intended for authorized vulnerability assessment of systems, websites, and source code. The project is being structured around explicit scope controls, reproducible findings, evidence retention, and human-reviewed remediation.
+
+**Planned system areas:**
+
+- Modular security scanners and rule packs
+- Source-code and configuration analysis
+- AI-assisted finding classification and prioritization
+- Controlled testing environments and isolated labs
+- Audit trails, reporting, and remediation workflows
+- A centralized console for authorized assessments
+
+KoalaWire is intended only for systems I own or have explicit permission to test.
+
+## My Role
+
+I define product requirements, system behavior, risk controls, acceptance criteria, repository structure, and deployment strategy. OpenAI Codex, Claude, v0, and other development tools assist with implementation, debugging, refactoring, testing, and documentation. I review and validate changes before deployment.
 
 ## Areas of Focus
 
 - Agentic AI and controlled automation
 - Financial technology and market analytics
-- Cloud application deployment
+- Defensive cybersecurity and vulnerability management
+- Cloud application architecture and deployment
 - API integration and system design
-- Responsible AI, auditability, and human oversight
-- Risk evaluation and operational controls
+- Explainability, auditability, and human oversight
+- Operational and financial risk controls
 
 ## Background
 
@@ -45,11 +65,12 @@ I define the product requirements, system behavior, risk controls, acceptance cr
 
 ## Development Principles
 
-- AI-generated work requires human review and testing
+- AI-generated work requires human review, testing, and documented acceptance criteria
 - Secrets and credentials remain outside source control
 - High-impact actions require deterministic authorization and guardrails
+- Security testing must remain within explicit legal and technical scope
 - Financial systems should be explainable, auditable, and designed around risk controls
-- Project documentation should distinguish implemented capabilities from planned features
+- Documentation should distinguish implemented capabilities from planned features
 
 ## Contact
 
