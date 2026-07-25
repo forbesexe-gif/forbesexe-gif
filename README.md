@@ -1,15 +1,16 @@
 # Jonathan Forbes
 
-Finance student, banking professional, and product builder developing AI-assisted fintech, cybersecurity, cloud, and automation systems.
+Finance student, banking professional, and product builder developing AI-assisted systems across financial technology, defensive cybersecurity, cryptography research, cloud infrastructure, and controlled automation.
 
 ## Driven Agentics
 
-[Driven Agentics](https://drivenagentics.com) is being planned as the parent company for PinkCharts and KoalaWire. Its purpose is to turn complex analytical workflows into controlled, explainable, and deployable software. Legal formation details remain pending until formally completed.
+[Driven Agentics](https://drivenagentics.com) is being planned as the parent company for a portfolio of specialized AI-assisted research and software products. Its purpose is to turn complex analytical workflows into controlled, explainable, auditable, and deployable systems. Legal formation details remain pending until formally completed.
 
 | Project | Focus | Status |
 |---|---|---|
 | [PinkCharts](https://pinkcharts.com) | Market analytics and trading-model evaluation | Active development and private beta |
 | [KoalaWire](https://koalawire.com) | Authorized defensive security assessment | Architecture and repository foundation |
+| [SHASweeper](https://shasweeper.com) | Bitcoin cryptography, blockchain, compute, and mining research | Architecture and repository foundation |
 
 ## Portfolio
 
@@ -40,27 +41,38 @@ KoalaWire is an early-stage defensive security platform intended for authorized 
 - Audit trails, reporting, and remediation workflows
 - A centralized console for authorized assessments
 
-KoalaWire is intended only for systems I own or have explicit permission to test. Its repositories currently contain scope and architecture documentation rather than a completed product.
+KoalaWire is intended only for systems I own or have explicit permission to test. Its repositories currently contain scope and architecture foundations rather than a completed product.
 
-## Independent Project
+### SHASweeper
 
-### Social Autopilots
+SHASweeper is a research platform for studying SHA-256, Bitcoin protocol behavior, blockchain data, distributed-compute performance, and regtest-first solo-mining workflows. The project separates cryptographic reference material, chain ingestion, experiment orchestration, compute benchmarking, mining research, telemetry, and documentation into dedicated private repositories.
 
-Social Autopilots is an early architecture and documentation project for a shared social-operations dashboard with specialized Facebook, Instagram, and LinkedIn operators. The design excludes automated likes, follows, votes, and connection requests. External publishing and messaging remain disabled until official APIs, deterministic authorization, auditability, and administrative controls are implemented and verified. Its future ownership under Driven Agentics has not been formally decided.
+**Current repository foundation:**
+
+- Cryptography knowledge base, SHA-256 reference laboratory, test vectors, and provenance manifests
+- Bitcoin Core RPC and ZMQ integration architecture, archival indexing, chain schemas, and reorganization tracking
+- Regtest-first block-template, work-ledger, Stratum, and solo-mining research components
+- Authorized distributed-compute adapters, benchmarking, scheduling, and worker telemetry
+- Local-first research console for blockchain inspection, SHA-256 visualization, telemetry, and experiment control
+- Architecture, threat-model, source-provenance, experiment, and AI-handoff documentation
+
+SHASweeper is restricted to public blockchain data, controlled test networks, authorized compute resources, and assets or environments I own or am explicitly permitted to use. It is not intended to bypass access controls, recover third-party private keys, or interfere with blockchain networks.
 
 ## My Role
 
-I define product requirements, system behavior, risk controls, acceptance criteria, repository structure, and deployment strategy. OpenAI Codex, Claude, v0, and other development tools assist with implementation, debugging, refactoring, testing, and documentation. I review and validate changes before deployment.
+I define product requirements, system behavior, risk controls, acceptance criteria, repository structure, research boundaries, and deployment strategy. OpenAI Codex, Claude, v0, and other development tools assist with implementation, debugging, refactoring, testing, and documentation. I review and validate changes before deployment or experimentation.
 
 ## Areas of Focus
 
 - Agentic AI and controlled automation
 - Financial technology and market analytics
 - Defensive cybersecurity and vulnerability management
+- Applied cryptography and blockchain protocol research
+- Distributed computing and performance benchmarking
 - Cloud application architecture and deployment
 - API integration and system design
-- Explainability, auditability, and human oversight
-- Operational and financial risk controls
+- Explainability, auditability, provenance, and human oversight
+- Operational, security, and financial risk controls
 
 ## Background
 
@@ -75,8 +87,10 @@ I define product requirements, system behavior, risk controls, acceptance criter
 - Secrets and credentials remain outside source control
 - High-impact actions require deterministic authorization and guardrails
 - Security testing must remain within explicit legal and technical scope
+- Cryptographic and blockchain research must use lawful targets, controlled environments, and authorized compute
 - Financial systems should be explainable, auditable, and designed around risk controls
-- Documentation should distinguish implemented capabilities from planned features
+- Research claims must be supported by reproducible experiments and source provenance
+- Documentation must distinguish implemented capabilities from planned features
 
 ## Contact
 
