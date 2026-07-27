@@ -1,0 +1,62 @@
+name: Build public engineering handbook expansion branches
+
+on:
+  push:
+    branches:
+      - automation/public-handbook-silver-20260727
+
+permissions:
+  contents: write
+
+jobs:
+  create-handbook-branches:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out orchestrator branch
+        uses: actions/checkout@v4
+        with:
+          ref: automation/public-handbook-silver-20260727
+          fetch-depth: 0
+
+      - name: Configure commit attribution
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      - name: Create coauthored handbook branches
+        shell: bash
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          import subprocess
+
+          entries = [('handbook/17-api-design', 'handbook/api-design.md', 'API Design', 'Standards for stable, understandable, and safely evolvable service interfaces.', 'Define schemas, authentication, errors, pagination, and versioning|Make retries and idempotency explicit for write operations|Document rate limits, deprecation, and compatibility guarantees'), ('handbook/18-database-design', 'handbook/database-design.md', 'Database Design', 'Practices for durable schemas, migrations, constraints, transactions, retention, and recovery.', 'Model invariants with database constraints where practical|Use reviewed, reversible migrations and tested backups|Index from observed query patterns and measure write amplification'), ('handbook/19-identity-access', 'handbook/identity-and-access.md', 'Identity and Access', 'Controls for authentication, authorization, service identities, sessions, and administrative access.', 'Use least privilege and short-lived credentials|Separate authentication from resource-level authorization|Audit privileged actions and test revocation paths'), ('handbook/20-dependency-management', 'handbook/dependency-management.md', 'Dependency Management', 'A supply-chain process for selecting, pinning, updating, and removing third-party software.', 'Prefer maintained dependencies with clear licenses|Pin versions and review lockfile changes|Track vulnerabilities, transitive risk, and replacement plans'), ('handbook/21-performance-capacity', 'handbook/performance-and-capacity.md', 'Performance and Capacity', 'Measurement practices for latency, throughput, concurrency, resource use, and graceful degradation.', 'Define representative workloads and service-level objectives|Profile before optimizing and preserve correctness|Test saturation, backpressure, timeouts, and recovery'), ('handbook/22-cost-management', 'handbook/cost-management.md', 'Cost Management', 'Controls for understanding and limiting infrastructure, data, API, model, and operational costs.', 'Attribute spend by project and environment|Set budgets, alerts, quotas, and retention limits|Evaluate unit economics before scaling'), ('handbook/23-privacy-review', 'handbook/privacy-review.md', 'Privacy Review', 'A review process for personal data, user expectations, minimization, consent, retention, and disclosure.', 'Map collected data to a specific purpose|Avoid unnecessary sensitive data in prompts, logs, and analytics|Define access, retention, deletion, and incident obligations'), ('handbook/24-decision-records', 'handbook/architecture-decision-records.md', 'Architecture Decision Records', 'A lightweight record of consequential technical choices, alternatives, evidence, and reversal conditions.', 'State context, decision, rationale, and tradeoffs|Record rejected alternatives and unresolved risks|Revisit decisions when assumptions or evidence change')]
+
+          def run(*args):
+              subprocess.run(args, check=True)
+
+          run('git', 'fetch', 'origin', 'main')
+          for branch, path, title, summary, practices in entries:
+              run('git', 'switch', '--force-create', branch, 'origin/main')
+              bullets = '\n'.join(f'- {item}' for item in practices.split('|'))
+              content = f'''# {title}
+
+          {summary}
+
+          ## Operating practices
+
+          {bullets}
+
+          ## Review standard
+
+          Changes should be evidence-based, scoped for review, explicit about limitations, and reversible where practical. Credentials, private infrastructure details, and unnecessary personal data must remain outside public artifacts.
+          '''
+              target = Path(path)
+              target.parent.mkdir(parents=True, exist_ok=True)
+              target.write_text(content, encoding='utf-8')
+              run('git', 'add', path)
+              msg = f'docs: add {title.lower()}\n\nCo-authored-by: Jonathan Forbes <284077179+forbesexe-gif@users.noreply.github.com>'
+              run('git', 'commit', '-m', msg)
+              run('git', 'push', '--force', 'origin', f'HEAD:refs/heads/{branch}')
+          PY
