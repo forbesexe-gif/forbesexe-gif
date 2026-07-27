@@ -10,7 +10,7 @@ Finance student, banking professional, and product builder developing AI-assiste
 |---|---|---|
 | [PinkCharts](https://pinkcharts.com) | Market analytics and trading-model evaluation | Active development and private beta |
 | [KoalaWire](https://koalawire.com) | Authorized defensive security assessment | Architecture and repository foundation |
-| [SHASweeper](https://shasweeper.com) | Bitcoin cryptography, blockchain, compute, and mining research | Architecture and repository foundation |
+| [SHAsweeper](https://shasweeper.com) | Bitcoin cryptography, blockchain, compute, and mining research | Architecture and repository foundation |
 
 ## Portfolio
 
