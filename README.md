@@ -43,9 +43,9 @@ KoalaWire is an early-stage defensive security platform intended for authorized 
 
 KoalaWire is intended only for systems I own or have explicit permission to test. Its repositories currently contain scope and architecture foundations rather than a completed product.
 
-### SHASweeper
+### SHAsweeper
 
-SHASweeper is a research platform for studying SHA-256, Bitcoin protocol behavior, blockchain data, distributed-compute performance, and regtest-first solo-mining workflows. The project separates cryptographic reference material, chain ingestion, experiment orchestration, compute benchmarking, mining research, telemetry, and documentation into dedicated private repositories.
+SHAsweeper is a research platform for studying SHA-256, Bitcoin protocol behavior, blockchain data, distributed-compute performance, and regtest-first solo-mining workflows. The project separates cryptographic reference material, chain ingestion, experiment orchestration, compute benchmarking, mining research, telemetry, and documentation into dedicated private repositories.
 
 **Current repository foundation:**
 
@@ -56,7 +56,7 @@ SHASweeper is a research platform for studying SHA-256, Bitcoin protocol behavio
 - Local-first research console for blockchain inspection, SHA-256 visualization, telemetry, and experiment control
 - Architecture, threat-model, source-provenance, experiment, and AI-handoff documentation
 
-SHASweeper is restricted to public blockchain data, controlled test networks, authorized compute resources, and assets or environments I own or am explicitly permitted to use. It is not intended to bypass access controls, recover third-party private keys, or interfere with blockchain networks.
+SHAsweeper is restricted to public blockchain data, controlled test networks, authorized compute resources, and assets or environments I own or am explicitly permitted to use. It is not intended to bypass access controls, recover third-party private keys, or interfere with blockchain networks.
 
 ## My Role
 
