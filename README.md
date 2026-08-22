@@ -1,110 +1,63 @@
 # Jonathan Forbes
 
-Banking professional, finance student, and product builder working across financial technology, defensive cybersecurity, applied cryptography, cloud infrastructure, and controlled AI-assisted systems.
+Banking operations professional and product builder in New York, focused on financial technology, defensive security, applied cryptography, technical education, and controlled AI-assisted engineering systems.
+
+[Driven Agentics](https://drivenagentics.com) · [GitHub organization](https://github.com/driven-agentics) · [Engineering handbook](./handbook/README.md) · [Email](mailto:forbes.exe@gmail.com)
 
 ## Driven Agentics
 
-[Driven Agentics](https://drivenagentics.com) is being planned as the parent company for a portfolio of specialized research and software products. Its purpose is to turn complex analytical workflows into controlled, explainable, auditable, and deployable systems. Legal formation details remain pending until formally completed.
+Driven Agentics is the umbrella for a privately developed portfolio of software, research, and engineering infrastructure. I lead product direction, system architecture, risk boundaries, acceptance criteria, and validation. AI development tools assist with implementation, but changes still require human review, test evidence, and documented release gates.
 
-| Project | Purpose | Current phase |
+Most source repositories remain private because the products are pre-release or contain security-sensitive, infrastructure, financial-research, or assessment material. Public descriptions below distinguish operational capabilities from work that is still in development.
+
+## Current Work
+
+| Project | Focus | Current status |
 |---|---|---|
-| [PinkCharts](https://pinkcharts.com) | Market analytics and trading-model evaluation | Active private development and beta testing |
-| [KoalaWire](https://koalawire.com) | Authorized defensive security assessment | Phase 3 desktop-alpha reliability and recovery hardening |
-| [SHAsweeper](https://shasweeper.com) | Bitcoin cryptography, blockchain, compute, and mining research | Phase 0 local and regtest research foundation |
+| [**PinkCharts**](https://pinkcharts.ai) | Market research and paper-trading analysis for evaluating trading models through backtests, scorecards, attribution, risk controls, and AI-assisted research | Private beta; live trading disabled |
+| **KoalaWire** | Local-first defensive security tooling for authorized source-code scanning, file triage, static mobile-artifact analysis, evidence provenance, and recovery | Unsigned desktop alpha; reliability and packaging hardening |
+| **SHAsweeper** | Source-grounded research into SHA-256, Bitcoin protocol behavior, local chain indexing, deterministic reorganization evidence, and bounded compute benchmarking | Wallet-free, local/regtest research; validated research checkpoint |
+| **Systems Atlas Academy** *(working title; rename planned)* | Source-backed learning for Python, Ubuntu, Windows, operating systems, and foundational computing, with guided progression, mastery workflows, and verifiable credentials | Course-player and curriculum development; broader catalog remains incomplete |
+| **Review Council** | Local-first, evidence-oriented software review using seven specialized reviewer roles, consistent severity and confidence rules, staged synthesis, and portable adapters for leading AI development tools | Core reviewer framework available; orchestration and control plane in development |
+| **Developer infrastructure** | Apple Silicon self-hosted GitHub Actions, repository allowlists, storage safeguards, browser-temporary-file monitoring, automatic pause and recovery controls, and deterministic Codex task routing | Runner operational for selected private macOS workflows; model router in development |
+| **Social Autopilots** | Policy-controlled architecture for social-content operations using explicit authorization, official APIs, auditability, and bounded automation | Early research and architecture |
 
-The product repositories are private. Public websites, distribution channels, and production availability are developed and reviewed separately from the underlying research and application code.
+PinkCharts is a research and evaluation product—not autonomous trading or investment advice. KoalaWire is restricted to systems and files I own or am authorized to assess. SHAsweeper remains wallet-free and local/regtest-only. Atlas currently spans 28 modules and 161 pages across Python, Ubuntu, and Windows 11; its broader catalog is still being built and source-verified.
 
-## Current Projects
+## Engineering Infrastructure and Assurance
 
-### PinkCharts
+- Built and configured an Apple Silicon macOS self-hosted GitHub Actions runner for selected private repositories. A background storage guard monitors disk pressure and temporary browser clones, pauses unsafe jobs, performs tightly scoped cleanup, and resumes work after recovery.
+- Developing deterministic model-and-reasoning-effort routing for local Codex and trusted CI, using repository context, policy and risk floors, live model discovery, a metadata-only private usage ledger, and reversible installation.
+- Developing Review Council as a portable review system for Codex, Cursor, Claude Code, ChatGPT, and generic prompt hosts. Specialist roles produce evidence-linked findings and a consolidated verdict while keeping execution boundaries explicit.
+- Maintaining a public [engineering handbook](./handbook/README.md) covering security, privacy, auditability, testing, recovery, repository governance, responsible AI, and open-source readiness.
 
-PinkCharts is a private-beta market analytics and trading-model evaluation platform focused on repeatable backtests, paper-trading analysis, risk-adjusted performance, consistency, and trading behavior rather than headline returns alone.
+The self-hosted runner serves only explicitly permitted macOS/ARM64 jobs. Linux and Windows workflows remain on their appropriate hosted environments, and private runner details are intentionally not published here.
 
-**Current architecture and capabilities:**
-
-- Python, FastAPI, Uvicorn, REST APIs, and WebSockets
-- Next.js and TypeScript dashboard
-- SQLAlchemy and Alembic persistence with PostgreSQL and SQLite
-- Market, macroeconomic, and sector-data workflows
-- Backtest and paper-trading session persistence
-- Model scorecards, attribution, audit records, and durable action queues
-- Risk limits, stale-data protections, emergency halts, and controlled broker-adapter contracts
-- DigitalOcean backend infrastructure with Nginx and systemd
-- Vercel frontend deployments and GitHub-based source control
-
-Live brokerage order submission remains disabled by default. Financial calculations, provider integrations, persistence changes, and risk controls require explicit validation before deployment.
-
-### KoalaWire
-
-KoalaWire is a local-first defensive security platform for authorized assessment of source code, files, packages, websites, configurations, dependencies, and supported mobile artifacts.
-
-**Implemented alpha foundation:**
-
-- Authenticated loopback-only FastAPI sidecar with versioned local APIs
-- SQLAlchemy and Alembic-managed SQLite persistence
-- Durable queued, running, completed, failed, cancelled, and interrupted scan states
-- Verified database backups, integrity checks, non-destructive recovery, and bounded diagnostic export
-- Hash-chained audit events and evidence provenance
-- Fixed-argument, no-shell scanner-worker contracts with bounded execution
-- Separate repositories for scanners, rules, console, synthetic labs, and documentation
-- Native desktop packaging and installer validation work coordinated through the console repository
-
-KoalaWire is limited to systems, applications, files, and environments I own or have explicit permission to assess. It is not intended for unauthorized access, persistence, credential collection, or evasion.
-
-### SHAsweeper
-
-SHAsweeper is a local and regtest-first research platform for studying SHA-256, Bitcoin protocol behavior, blockchain data, compute performance, and deterministic mining-related contracts.
-
-**Implemented Phase 0 foundation:**
-
-- Rust SHA-256 reference laboratory, Bitcoin hashing primitives, test vectors, and provenance records
-- Read-only, loopback-restricted Bitcoin Core RPC and ZMQ integration
-- PostgreSQL-backed chain metadata indexing, checkpoints, and reorganization tracking
-- Authorized local-compute inventory and reproducible benchmarking
-- Regtest block-template and work-ledger contracts without production mining execution
-- Local read-only Next.js and TypeScript research console
-- Source-grounded architecture, threat-model, experiment, and review documentation
-
-Phase 0 does not include wallet custody, payout handling, public Bitcoin Core RPC, cloud provisioning, mainnet mining, or block submission. Compute activity requires ownership or written authorization.
-
-## My Role
-
-I define product requirements, architecture, system behavior, risk controls, acceptance criteria, repository boundaries, research constraints, deployment strategy, and validation expectations. OpenAI Codex, Claude, v0, and other development tools assist with implementation, debugging, refactoring, testing, and documentation. I review and validate changes before deployment or experimentation.
-
-## Working Stack
+## Technical Focus
 
 - **Languages:** Python, Rust, TypeScript, SQL, HTML, and CSS
-- **Application:** FastAPI, Next.js, Tauri, Pydantic, SQLAlchemy, and Alembic
-- **Data:** PostgreSQL, SQLite, REST APIs, WebSockets, and structured event contracts
-- **Infrastructure:** DigitalOcean, Vercel, Cloudflare, Nginx, systemd, and PyInstaller
-- **Engineering:** Git, GitHub, GitHub Actions, versioned schemas, automated testing, audit logging, and recovery controls
+- **Applications:** FastAPI, Next.js, React, Tauri, Pydantic, SQLAlchemy, and Alembic
+- **Data:** PostgreSQL, SQLite, REST APIs, WebSockets, and versioned event contracts
+- **Engineering:** Git, GitHub Actions, self-hosted CI, automated testing, audit logging, recovery controls, and protected review workflows
+- **Infrastructure:** Vercel, Cloudflare, DigitalOcean, Nginx, systemd, and native desktop packaging
 
-## Current Priorities
+## How I Work
 
-- Improve PinkCharts model evaluation, paper research, interface quality, and controlled AI-assisted workflows
-- Advance KoalaWire desktop-alpha reliability, native packaging, scanner integration, and recovery behavior
-- Expand SHAsweeper's source-grounded cryptography, chain, compute, and regtest research
-- Strengthen cloud account security, origin protection, deployment boundaries, and infrastructure documentation
+- Separate implemented capabilities from planned work
+- Prefer small, reviewable, reversible changes
+- Keep secrets, credentials, private keys, and production tokens outside source control
+- Require explicit authorization for security assessment and compute activity
+- Build financial and AI-assisted systems around explainability, auditability, and risk controls
+- Treat AI-generated implementation as work that still requires human review and test evidence
 
 ## Background
 
-- Banking operations experience involving transaction controls, KYC/AML, fraud prevention, and exception escalation
+- Banking operations experience involving transaction controls, customer verification, fraud prevention, and exception escalation
 - FINRA Securities Industry Essentials exam passed
-- A.A. from Daytona State College and continuing finance studies at Baruch College
-- Long-standing technical interest through game modification, Android rooting, custom ROM installation, operating-system flashing, and system recovery
-
-## Development Principles
-
-- AI-assisted work requires human review, testing, and documented acceptance criteria
-- Secrets, credentials, private keys, and production tokens remain outside source control
-- High-impact actions require deterministic authorization, auditability, and rollback controls
-- Security testing must remain within explicit legal and technical scope
-- Cryptographic and blockchain research must use lawful targets, controlled environments, and authorized compute
-- Financial systems should be explainable, auditable, and designed around risk controls
-- Research claims must be supported by reproducible experiments and source provenance
-- Documentation must distinguish implemented capabilities from planned features
+- Associate of Arts, Daytona State College
+- Continuing finance studies at Baruch College
+- Based in New York, NY
 
 ## Contact
 
-- Email: forbes.exe@gmail.com
-- Location: New York, NY
+[forbes.exe@gmail.com](mailto:forbes.exe@gmail.com)
